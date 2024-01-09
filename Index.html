@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Project No Rona</title>
+    <link rel="icon" type="image" href="Project No-Rona Logo.png">
+    <style>
+        body {
+            font-family: 'Garamond';
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+        }
+
+#slideshow-container {
+            overflow: hidden;
+	    border: 4px solid #87CEFA;
+	    height: 500px;
+	    width: 830px;
+	    margin-left: 335px;
+	    margin-top: 0px;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 500px;
+        }
+
+        header {
+            background-color: #FFFFFF;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #87CEFA;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #0056b3;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2px;
+            background-color: #87CEFA;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+.image{
+	height: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+       }
+
+.accordion {
+  background-color: #87CEFA;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 18px;
+  width: 75%;
+  border:none;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  margin: 10px 175px;
+}
+
+.active, .accordion:hover {
+  background-color: #4dd2ff;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #FFFFFF;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 175px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 75%
+}
+
+    </style>
+</head>
+<body>
+
+    <div class = "image">
+        <img src="Project No-Rona Logo.png" alt="Logo" style="width:75px;height:75px;border-radius:50%;class="center";">
+    </div>
+
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1 style="font-family:Georgia;color:#87CEFA;">PROJECT NO RONA</h1>
+    </header>
+
+<div id="slideshow-container">
+        <div class="mySlides">
+            <img src="Covid-19.jpg" alt="Slide 1">
+        </div>
+
+        <div class="mySlides">
+            <img src="Sea of Masks.jpg" alt="Slide 2">
+        </div>
+
+        <div class="mySlides">
+            <img src="Vaccine.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 2500); // Change slide every 50 seconds
+        }
+    </script>
+
+    <section>
+        <h2 style="text-align:center;color:#87CEFA;"><b>We Will Recover Together.</b></h2>
+        <p>
+            Established as part of the No Rona Project operation, in collaboration with the Ministry of Health and Wellness, we are a team dedicated to observing the developments of the Covid-19 pandemic within Jamaica and educating you, the general public, about the protective measures that can be implemented to guard yourself, your families and your communities.
+        </p>
+    </section>
+
+	<div>
+		<h1 style="text-align:center;color:#87CEFA;padding-bottom:25px"><b>BE INFORMED!</b></h1>
+	</div>
+
+<button class="accordion"><b>What Is Covid-19?</b></button>
+<div class="panel">
+  <p> 
+<img src="Blue Covid-19 Image.jpeg" alt="Covid-19" style="float:left;width:300px;height:200px;margin: 0px 30px 70px 40px;border: 4px solid #4682B4;">
+Coronaviruses are a family of viruses that invoke illnesses such as respiratory/gastrointestinal diseases. Respiratory diseases can range from the common cold to more severe diseases namely :
+<ul>
+	<li>Middle East Respiratory Syndrome (MERS-CoV)</li>
+	<li>Severe Acute Respiratory Syndrome (SARS-CoV)</li>
+</ul>
+However, a novel coronavirus (Covid-19, the virus causing it is SARS-CoV 2) is a new strain that was not previously recognized in humans. After the first cases of this predominantly respiratory illness were reported in Wuhan, Hubei Province, China, in late December 2019, SARS-CoV-2 rapidly disseminated across the world in a short span of time, prompting the World Health Organization (WHO) to declare it as a global pandemic on March 11, 2020. Jamaica recorded its first COVID-19 case on March 10, 2020. </p>
+</div>
+
+<button class="accordion"><b>Symptoms of Covid-19</b></button>
+<div class="panel">
+  <p> 
+<img src="Sick.jpg" alt="Symptoms" style="float:right;width:350px;height:200px;margin: 0px 30px 50px 50px;border: 4px solid #DCDCDC;">
+Most individuals infected with the COVID-19 virus experience mild to moderate respiratory symptoms and recover without needing specific treatment. People may experience different symptoms from COVID-19, however, these common symptoms usually begin 5–6 days after exposure and last 1–14 days :
+<ul>
+	<li>Fever</li>
+	<li>Cough</li>
+	<li>Shortness of Breath</li>
+	<li>Sore throat</li>
+</ul>
+However, older adults and individuals with underlying medical conditions such as cardiovascular disease, diabetes, chronic respiratory/liver disease, hypertension and cancer are more susceptible to developing severe illness.</p>
+</div>
+
+<button class="accordion"><b>Protective Measures Against Covid-19</b></button>
+<div class="panel">
+<p>
+<img src="Protect.jpg" alt="Measures" style="float:left;width:200px;height:200px;margin: 0px 30px 70px 40px;border: 4px solid #8fbbbc;">
+<img src="Together.jpg" alt="Protect" style="float:right;width:200px;height:200px;margin: 0px 30px 70px 40px;border: 4px solid #87CEFA;">
+  		<h2 style="text-align:center;color:#87CEFA;"><i>"Prevention is better than cure."</i></h2>
+		<p> As the number of positive Covid-19 cases increase, there are a several preventative measures you can employ to protect yourself and the wider community including : 
+<ul>
+	<li>Clean and disinfect frequently touched surfaces.</li>
+	<li>Avoid all non-essential travel.</li>
+	<li>Contact your healthcare professional if you have concerns about COVID-19 and your underlying condition or if you are sick.</li>
+	<li>Stay home, only venturing outside when absolutely necessary.</li>
+	<li>Avoid close contact (6 feet apart) and wash hands often.</li>
+</ul>
+</p>
+</p>
+	</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+   <div style="text-align:center;padding-top:150px;padding-bottom: 150px;">
+        <h2 style="color:#87CEFA;">Questions?</h2>
+	<p> For more information, contact <a href="mailto:abigail.wilson@campioncollege.com">abigail.wilson@campioncollege.com</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Project No Rona</p>
+	<p style="text-align: center;">Ministry of Health & Wellness, Jamaica<p>
+    </footer>
+
+</body>
+</html>
